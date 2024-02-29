@@ -1,0 +1,251 @@
+
+/* colores 
+background-color:rgb(168, 106, 49); beige
+background-color:rgb(67, 21, 21); rojo
+color: rgb(213, 151, 20); dorado
+}
+*/
+
+body{
+    margin: 0;
+}
+
+
+/* header */
+header{
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    background-color:rgb(103, 30, 30);
+    align-items: center;
+    padding: 10px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+header a :hover
+{
+    color: rgb(213, 151, 20);
+}
+/* nav del header */
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: rgb(213, 151, 20);
+}
+
+/* Logo y titulo */
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px ;
+    margin-left: 10px;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+/* Subheader */
+.subheader{
+    align-items: center;
+    padding-left: 10px;
+    background-color:rgb(168, 106, 49);
+    font-weight: 600;
+}
+.subheader h5 {
+    margin-bottom: 0;
+  }
+  
+/* Carrusel de cartas */
+.cards-wrapper{
+    background-color: rgb(213, 151, 20);
+    justify-content: center;
+    display: flex;
+}
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: rgb(213, 151, 20);
+}
+.card-text{
+    text-align: justify;
+}
+/* Barra recomendaciones */
+.barra{
+    background-color: rgb(213, 151, 20);
+    text-align: center;
+}
+.barra h2{
+    margin-bottom: 0;
+}
+/* Cuerpo principal*/
+.pilar{
+    background-color: rgb(168, 106, 49);
+}
+.pilar h2{
+    margin-bottom: 0;
+}
+.contenedor {
+    background-color: rgb(236, 187, 130);
+    width: 100%;
+    height: 450px;
+    max-width: 1550px;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.contenedor-libros1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.contenedor-libros1 .card {
+    border-radius: 10px;
+    min-height: 200px;
+    font-weight: bold;
+    position:relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+.contenedor .card .textos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Footer*/
+
+.fondo{
+    position:relative;
+    bottom: auto;
+    width: 100%;
+    background-color: rgb(103, 30, 30);
+    margin: 0;
+    padding: 0;
+}
+.fondo .grupo-1{
+    width: 700px;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+.fondo .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fondo .grupo-1 .box figure img{
+    width: 200px;
+
+}
+.fondo .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+}
+
+.fondo .grupo-1 .box p{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.fondo .grupo-1 .comentarios a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    width: 170px;
+    background-color: rgb(213, 151, 20);
+    text-align: center;
+    border-radius: 5px;
+    transition: all 300ms ease;
+}
+.fondo .grupo-1 .comentarios a:hover{
+
+    color: white;
+}
+.fondo .grupo-2{
+    padding: 15px 10px;
+    text-align: center;
+}
+.fondo .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .fondo .grupo-1{
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    padding: 35px 0;
+    }
+}
+
+/* Formulario */
+
+.formulario{
+    background-color:rgb(103, 30, 30);
+    padding: 10px 20px;
+    margin: 0;
+    font-weight: 600;
+    color: white;
+}
+
+.formulario textarea,
+.formulario input[type="text"],
+.formulario input[type="email"] {
+    width: 100%;
+    padding: 2px;
+    margin-bottom: 2px;
+}
+
+.formulario .envio{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    width: 100%;
+    max-width: 170px;
+    background-color: rgb(213, 151, 20);
+    text-align: center;
+    border-radius: 5px;
+    transition: all 300ms ease;
+}
+
+@media screen and (max-width: 600px){
+    .formulario {
+        padding: 15px;
+    }
+
+    .formulario .envio {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+}
+/* Relleno1 */
+
+.relleno1{
+    background-color: rgb(236, 187, 130);
+    color: rgb(236, 187, 130);
+    margin: 0;
+    padding: 20px 0;
+}
