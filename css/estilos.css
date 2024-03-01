@@ -94,8 +94,9 @@ nav a:hover{
 .contenedor {
     background-color: rgb(236, 187, 130);
     width: 100%;
-    height: 450px;
+    max-height: 450px;
     max-width: 1550px;
+    min-height: 450px;
     margin: auto;
     padding: 10px;
     display: grid;
